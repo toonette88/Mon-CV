@@ -1,10 +1,45 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.woff);
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Bold.woff);
+    src: url(../fonts/Raleway-Bold.ttf);
+    font-weight: bold
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Italic.woff);
+    src: url(../fonts/Raleway-Italic.ttf);
+    font-style: italic
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+h1,
+h2,
+h3{
+    font-family: "Lato",sans-serif;
+    font-size: 1.5em;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
 body{
     max-width: 1160px;
     margin: auto;
+    font-family: "Raleway",sans-serif;
+    font-size: 1 em;
 }
+
 body>*{
     background-color: #782221;
+    
 }
+
 header{
     display: flex;
     flex-direction: column;
@@ -62,6 +97,11 @@ div{
     display: flex;
     flex-direction: column;
 }
+
+.Job,.study{
+    font-weight: bold;
+}
+
 footer{
     text-align: center;
 }
