@@ -117,7 +117,14 @@ div{
     flex-direction: column;
 }
 
-.Job,.study{
+.main-content_element_study,
+.main-content_element_job{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content_element_job_title,
+.main-content_element_study_title{
     font-weight: bold;
 }
 
@@ -125,4 +132,24 @@ footer{
     text-align: center;
     padding: 15px;
 }
+footer img{
+    width: 40px;
+}
 
+/*Ajout des effets*/ 
+figure a:hover{
+    cursor: zoom-in;
+}
+address a:hover{
+    text-decoration: underline white;
+}
+.main-content_element_job:hover,
+.main-content_element_study:hover,
+.main-content_element ul li:hover
+{
+    border-right:5px solid #782221;
+}
+
+section a:hover{
+    opacity: 50%;
+}
